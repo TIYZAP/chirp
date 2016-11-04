@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get '/all' => 'users#index'
     post '/follow' => 'users#follow_user'
     post '/unfollow' => 'users#unfollow_user'
-    post '/allfollowers' => 'users#all_followers'
+    get '/allfollowers' => 'users#all_followers'
   end
 
 end
