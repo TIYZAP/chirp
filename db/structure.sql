@@ -228,7 +228,9 @@ CREATE TABLE users (
     api_token character varying,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
-    avatar_id character varying
+    avatar_id character varying,
+    followees_count integer DEFAULT 0,
+    followers_count integer DEFAULT 0
 );
 
 
@@ -434,6 +436,6 @@ ALTER TABLE ONLY shouts
 
 SET search_path TO "$user", public;
 
-INSERT INTO schema_migrations (version) VALUES ('20161103190158'), ('20161103190159'), ('20161103190200'), ('20161103192807'), ('20161103201828'), ('20161103215255'), ('20161104153856');
+INSERT INTO schema_migrations (version) VALUES ('20161103190158'), ('20161103190159'), ('20161103190200'), ('20161103192807'), ('20161103201828'), ('20161103215255'), ('20161104153856'), ('20161104222936');
 
 
