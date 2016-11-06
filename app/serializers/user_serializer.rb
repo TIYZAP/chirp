@@ -1,6 +1,6 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :api_token, :avatar, :followers_count, :followees_count
 
+  attributes :id, :name, :email, :api_token, :avatar, :followers_count, :followees_count
 
 
   def avatar
